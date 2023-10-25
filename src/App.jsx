@@ -1,5 +1,7 @@
 import reactImg from "./assets/react-core-concepts.png";
 import componentsImg from "./assets/components.png";
+import { CORE_CONCEPTS } from "./data.js";
+
 const reactDescriptions = ["Fundamental", "Crucial", "Core"];
 
 function genRandomInt(max) {
@@ -39,7 +41,7 @@ function App() {
           <h2>Core Concepts</h2>
           <ul>
             <CoreConcept
-              title="Components"
+              title={CORE_CONCEPTS[0].title}
               description="The core UI building block"
               image={componentsImg}
             />
